@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+      <h2>Edit Your Post ✏️</h2>
+
+<form method="post" action="/posts/<%= post.id %>?_method=PATCH" class="edit-post-form">
+  <label for="content">Post Content:</label>
+  <textarea id="content" name="content" rows="5" placeholder="Update your thoughts..."><%= post.content %></textarea>
+
+  <label for="date">Select Date:</label>
+  <input id="date" type="date" name="Date" value="<%= post.Date %>">
+
+  <button type="submit">💾 Update Post</button>
+</form>
+</body>
+</html>
+
+

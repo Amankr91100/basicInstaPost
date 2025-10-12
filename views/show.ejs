@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>showPost</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="post-show-container">
+  <div class="post-card">
+    <h1>ID: <%= post.id %></h1>
+    <h2>Date: <%= post.Date %></h2>
+    <p class="post-content"><%= post.content %></p>
+
+    <a href="/posts" class="back-btn">⬅️ Back to All Posts</a>
+  </div>
+</div>
+
+</body>
+</html>
